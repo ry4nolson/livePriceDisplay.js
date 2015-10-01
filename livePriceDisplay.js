@@ -39,7 +39,7 @@ function updateQty(val) {
   ignore = false;
 }
  
-$('#txtQuantity').on('keyup click change focus blur', function() { 
+$('#txtQuantity').on('input', function() { 
  var val = $(this).val();
   if (val) {
     updateQty(val);
